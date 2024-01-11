@@ -1,0 +1,22 @@
+<ion-header>
+
+</ion-header>
+
+<ion-content class="ion-padding">
+  <div  style="width: 251px; height: 258px; left: 55px; top: 150px;position: absolute">
+    <u><b><h1 style="text-align: center;">CONNEXION</h1></b></u>
+    <h5 style="text-align: center;">Veuillez remplir les informations</h5>
+   
+  
+
+  <ion-input placeholder="Matricule" class="primary-input" [(ngModel)]="matricule"></ion-input>
+  <ion-input placeholder="Password" type="password" class="primary-input" [(ngModel)]="password"></ion-input>
+
+  <div class="ion-margin-top">
+    <ion-button expand="block" (click)="login()" [disabled]="matricule.length < 8 || password.length < 8">se connecter</ion-button>
+  </div>
+
+  <div class="ion-margin-top ion-text-center">
+    <a (click)="dismiss()">Annuler</a>
+  </div></div>
+</ion-content>

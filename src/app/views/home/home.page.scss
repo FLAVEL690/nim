@@ -1,0 +1,32 @@
+.btn-game {
+    margin-top: 8rem;
+    // display: grid;
+    // gap: 1rem;
+    right: 0.325rem;
+    // margin-left: 10%;
+    
+    
+
+    ion-button {
+        text-transform: none;
+        --border-radius: 100%;
+        margin-inline: 100px;
+        width: 250px;
+        height: 240px;
+        flex-shrink: 0;
+        
+        
+       
+    }
+
+}
+.title{
+    margin-top: 20%;
+}
+// .btn{
+//     top: 50%;
+//         position: absolute;
+        
+//         top:500rem;
+       
+// }

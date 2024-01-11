@@ -1,0 +1,26 @@
+<ion-header>
+
+</ion-header>
+
+<ion-content class="ion-padding">
+  <div style="width: 251px; height: 258px; left: 55px; top: 150px;position: absolute">
+    <u><b><h1 style="text-align: center;">INSCRIPTION</h1></b></u>
+    <h4 style="text-align: center;">Veuillez remplir les informations</h4>
+    
+ 
+
+  <ion-input placeholder="Prenom" class="primary-input" [(ngModel)]="prenom"></ion-input>
+  <ion-input placeholder="Matricule" class="primary-input" [(ngModel)]="matricule"></ion-input>
+  <ion-input placeholder="Password" type="password" class="primary-input" [(ngModel)]="password"></ion-input>
+
+ 
+
+  <div class="ion-margin-top">
+    <ion-button color="secondary" expand="block" (click)="register()" [disabled]="matricule.length < 8 || password.length < 8">S'enregistrer</ion-button>
+  </div>
+
+  <div class="ion-margin-top ion-text-center">
+    <a (click)="dismiss()">Annuler</a>
+  </div> </div>
+
+</ion-content>
